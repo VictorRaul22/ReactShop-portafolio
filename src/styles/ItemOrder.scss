@@ -1,0 +1,26 @@
+.ItemOrder {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+}
+.ItemOrder-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.ItemOrder p:nth-child(2) {
+  text-align: end;
+}
+.ItemOrder-details {
+  width: 100%;
+  background-color: var(--text-input-field);
+  padding: 10px 20px;
+  border-radius: 10px;
+  grid-template-columns: auto 1fr;
+  align-self: center;
+}
+.ItemOrder-details img {
+  display: none;
+}

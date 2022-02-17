@@ -1,0 +1,25 @@
+.AddContainer {
+  width: 100%;
+}
+.AddContainer-img {
+  width: 100%;
+  height: 300px;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+.AddContainer-product-info {
+  margin: 24px 24px 0 24px;
+}
+.AddContainer-product-info p:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.AddContainer-product-info p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+.AddContainer-product-info p:nth-child(3) {
+  margin-top: 0;
+  margin-bottom: 36px;
+}

@@ -1,0 +1,29 @@
+.Input {
+  box-sizing: initial;
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 6px;
+  width: calc(100% - 12px);
+}
+.Input-search {
+  width: calc(100% - 46px);
+  padding-left: 40px;
+}
+.Input:focus {
+  outline: var(--hospital-green) 2px solid;
+}
+.Input-mr22 {
+  margin-bottom: 22px;
+}
+.Input-mr12 {
+  margin-bottom: 12px;
+}
+.Input-mt14 {
+  margin-top: 14px;
+}
+.Input-mb30 {
+  margin-bottom: 30px;
+}

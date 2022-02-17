@@ -1,0 +1,25 @@
+@use "vars";
+.Label {
+  display: block;
+  width: 100%;
+  text-align: start;
+  font-size: var(--sm);
+  font-weight: bold;
+}
+.Label-mr {
+  margin-bottom: 4px;
+}
+.Label-edit {
+  box-sizing: initial;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 6px;
+  width: calc(100% - 12px);
+  color: var(--very-light-pink);
+}
+.Label-mr12 {
+  margin-bottom: 12px;
+}

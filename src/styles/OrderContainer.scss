@@ -1,0 +1,15 @@
+.Order-container-general {
+  width: 100vw;
+  height: calc(100vh - 61px);
+  display: flex;
+  // place-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.Order-container {
+  min-height: 350px;
+  width: 300px;
+}
+.Order-container > div {
+  margin-top: 24px;
+}

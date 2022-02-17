@@ -1,0 +1,43 @@
+.ItemLink a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ItemLink a:hover {
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+.ItemLink-align-end {
+  text-align: end;
+}
+.ItemLink-font-bold {
+  font-weight: bold;
+}
+.ItemLink-black a {
+  color: var(--black);
+  margin-bottom: 20px;
+  border: none;
+}
+.ItemLink-black a:hover {
+  border: none;
+  color: var(--black);
+}
+.ItemLink-green {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid var(--very-light-pink);
+}
+.ItemLink-inline-block a {
+  display: inline-block;
+}
+.ItemLink-green a {
+  border: none;
+  color: var(--hospital-green);
+}
+.ItemLink-green:hover a {
+  border: none;
+  color: var(--hospital-green);
+}

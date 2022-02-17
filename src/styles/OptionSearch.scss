@@ -1,0 +1,11 @@
+.OptionSearch {
+  width: 50%;
+  display: flex;
+  column-gap: 20px;
+  min-width: 240px;
+}
+@media (max-width: 640px) {
+  .OptionSearch {
+    flex-direction: column;
+  }
+}

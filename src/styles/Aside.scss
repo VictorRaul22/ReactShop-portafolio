@@ -1,0 +1,15 @@
+.Aside {
+  width: 360px;
+  padding-bottom: 24px;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  position: fixed;
+  top: 61px;
+  background-color: white;
+}
+@media (max-width: 640px) {
+  .Aside {
+    width: 100%;
+  }
+}

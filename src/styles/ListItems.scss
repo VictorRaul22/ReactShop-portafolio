@@ -1,0 +1,15 @@
+.ListItems {
+  color: var(--very-light);
+  font-size: var(--sm);
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .ListItems-none {
+    display: none;
+  }
+}

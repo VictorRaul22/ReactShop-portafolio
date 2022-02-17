@@ -1,0 +1,10 @@
+.ListProductCart {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  // overflow-y: hidden; /*hacer un scroll container*/
+}
+.ListProductCart > div:last-child {
+  margin-bottom: 18px;
+}

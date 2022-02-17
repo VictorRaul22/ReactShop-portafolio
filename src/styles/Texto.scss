@@ -1,0 +1,25 @@
+@use "vars";
+.Texto {
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--md);
+  color: black;
+  margin: 0;
+}
+.Texto-inline {
+  display: inline-block;
+}
+.Texto-bold {
+  font-weight: bold;
+}
+.Texto-thin {
+  font-weight: 200;
+}
+.Texto-size-sm {
+  font-size: var(--sm);
+}
+.Texto-size-lg {
+  font-size: var(--lg);
+}
+.Texto-gray {
+  color: var(--very-light-pink);
+}

@@ -1,0 +1,14 @@
+.Logo {
+  width: 100px;
+}
+.Logo-form {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  display: none;
+}
+@media (max-width: 640px) {
+  .Logo-form {
+    display: block;
+  }
+}

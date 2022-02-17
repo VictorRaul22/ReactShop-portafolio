@@ -1,0 +1,16 @@
+.SummaryCart {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--text-input-field);
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+.SummaryCart p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.SummaryCart p:nth-child(2) {
+  text-align: end;
+}

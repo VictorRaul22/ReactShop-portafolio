@@ -1,0 +1,32 @@
+.Checkout {
+  width: 360px;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0 auto;
+}
+.Checkout-heightAll {
+  display: flex;
+  flex-direction: column;
+}
+.title-Checkout {
+  display: flex;
+}
+.title-Checkout p {
+  margin: 18px 0px;
+}
+.title-Checkout img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
+.my-order-content {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .title-Checkout {
+    display: none;
+  }
+}

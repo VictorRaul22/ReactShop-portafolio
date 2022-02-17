@@ -1,0 +1,17 @@
+.Product {
+  width: 240px;
+}
+
+.Product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+.Product-info figure {
+  margin: 0;
+}
+.Product-info figure img {
+  width: 35px;
+  height: 35px;
+}
