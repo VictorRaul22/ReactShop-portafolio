@@ -25,7 +25,7 @@ function App() {
   // console.log(initialState)
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter basename='/ReactShop-portafolio'>
+      <BrowserRouter>
         <Layout>
           <Routes>
             <Route path='/' element={<Home/>}/>
