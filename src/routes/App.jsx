@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route,HashRouter} from 'react-router-dom'
 import {Login} from '@pages/Login'
 import {MyAccount} from '@pages/MyAccount'
 import {EmailSent} from '@pages/EmailSent';
@@ -25,7 +25,7 @@ function App() {
   // console.log(initialState)
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -40,7 +40,7 @@ function App() {
             
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </AppContext.Provider>
     
   )
