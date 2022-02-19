@@ -10,7 +10,7 @@
     "predeploy":"npm run build && echo reactshop-portafolio.quest > ./dist/CNAME",
     "deploy":"gh-pages -d dist"
   },
-  "homepage": "https://reactshop-portafolio.quest",
+  "homepage": "https://www.reactshop-portafolio.quest",
   "keywords": [
     "react",
     "javascript"
