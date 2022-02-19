@@ -25,7 +25,7 @@ function App() {
   // console.log(initialState)
   return (
     <AppContext.Provider value={initialState}>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <Layout>
           <Routes>
             <Route path='/' element={<Home/>}/>
