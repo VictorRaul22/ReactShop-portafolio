@@ -69,11 +69,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css'
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'public/_redirects', to: 'public/' },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: 'public/_redirects', to: 'public/' },
+    //   ],
+    // }),
   ],
   devServer: {
     historyApiFallback: true,
