@@ -1,7 +1,7 @@
 import React from 'react'
-import { ItemOrder } from '../components/modecula/ItemOrder'
-import { ListProductCart } from '../components/modecula/ListProductCart'
-import { OrderContainer } from '../containers/OrderContainer'
+import { ItemOrder } from '@molecula/ItemOrder'
+import { ListProductCart } from '@molecula/ListProductCart'
+import { OrderContainer } from '@containers/OrderContainer'
 
 function Orders() {
   return (

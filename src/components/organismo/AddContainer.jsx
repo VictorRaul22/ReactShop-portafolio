@@ -1,8 +1,8 @@
 import React from 'react'
+import {Texto} from "@atomo/Texto"
+import {Button} from "@atomo/Button"
+import {ButtonClose}from "@atomo/ButtonClose";
 import "@styles/AddContainer.scss"
-import {Texto} from "../atomo/Texto"
-import {Button} from "../atomo/Button"
-import {ButtonClose}from "../atomo/ButtonClose";
 function AddContainer() {
   return (
     <div className='AddContainer'>

@@ -13,3 +13,11 @@
 .Order-container > div {
   margin-top: 24px;
 }
+@media (max-width: 640px) {
+  .Order-container-general {
+    height: 100%;
+  }
+  .Order-container > p {
+    display: none;
+  }
+}

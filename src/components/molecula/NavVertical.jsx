@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/NavVertical.scss"
+import "@styles/NavVertical.scss"
 function NavVertical(props) {
   return (
   <div className="desktop-menu">

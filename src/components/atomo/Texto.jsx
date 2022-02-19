@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/Texto.scss";
+import "@styles/Texto.scss";
 function Texto(props) {
   const {bold,thin,sm,lg,inline,gray} = props;
   const clases=`Texto 

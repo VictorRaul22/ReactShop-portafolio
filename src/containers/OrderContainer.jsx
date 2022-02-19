@@ -1,6 +1,6 @@
 import React from 'react'
 import "@styles/OrderContainer.scss"
-import { Texto } from '../components/atomo/Texto'
+import { Texto } from '@atomo/Texto'
 function OrderContainer({children}) {
   return (
     <div className='Order-container-general'>

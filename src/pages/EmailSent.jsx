@@ -1,10 +1,10 @@
 import React from 'react'
-import { FormContainer } from '../containers/FormContainer';
+import { FormContainer } from '@containers/FormContainer';
+import {Button} from '@atomo/Button';
+import { Link } from '@atomo/Link';
+import {Texto} from '@atomo/Texto';
 import message from "@icons/email.svg"
-import {Button} from '../components/atomo/Button';
-import { Link } from '../components/atomo/Link';
-import {Texto} from '../components/atomo/Texto';
-import "../styles/EmailSent.scss";
+import "@styles/EmailSent.scss";
 function EmailSent() {
   return (
     <FormContainer 

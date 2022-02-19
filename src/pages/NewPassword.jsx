@@ -1,9 +1,9 @@
 import React from 'react'
-import { FormContainer } from '../containers/FormContainer';
-import {Button} from '../components/atomo/Button';
-import { Label } from '../components/atomo/Label';
-import { Input } from '../components/atomo/Input';
-import "../styles/EmailSent.scss";
+import { FormContainer } from '@containers/FormContainer';
+import {Button} from '@atomo/Button';
+import { Label } from '@atomo/Label';
+import { Input } from '@atomo/Input';
+import "@styles/EmailSent.scss";
 function NewPassword() {
   return (
     <FormContainer 

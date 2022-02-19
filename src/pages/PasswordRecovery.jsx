@@ -1,10 +1,10 @@
 import React from 'react'
-import { FormContainer } from '../containers/FormContainer';
-import {Button} from '../components/atomo/Button';
-import { Link } from '../components/atomo/Link';
-import {Texto} from '../components/atomo/Texto';
-import { Label } from '../components/atomo/Label';
-import {Input} from "../components/atomo/Input"
+import { FormContainer } from '@containers/FormContainer';
+import {Button} from '@atomo/Button';
+import { Link } from '@atomo/Link';
+import {Texto} from '@atomo/Texto';
+import { Label } from '@atomo/Label';
+import {Input} from "@atomo/Input"
 // import "../styles/PasswordRecovery.scss";
 function PasswordRecovery() {
   return (

@@ -1,13 +1,13 @@
 import React from 'react'
-import {Texto} from '../atomo/Texto'
+import {Texto} from '@atomo/Texto'
 import "@styles/SummaryCart.scss"
-function SummaryCart() {
+function SummaryCart({price}) {
   return (
     <div className="SummaryCart">
         <Texto>
           <span>Total</span>
         </Texto>
-        <Texto>$560.00</Texto>
+        <Texto>${price}</Texto>
     </div>
   )
 }

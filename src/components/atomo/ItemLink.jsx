@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/ItemLink.scss";
+import "@styles/ItemLink.scss";
 function ItemLink(props) {
   return (
     <li className={`

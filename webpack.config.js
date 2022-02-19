@@ -14,10 +14,16 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
+      '@atomo': path.resolve(__dirname, 'src/components/atomo'),
+      '@molecula': path.resolve(__dirname, 'src/components/molecula'),
+      '@organismo': path.resolve(__dirname, 'src/components/organismo'),
       '@containers': path.resolve(__dirname, 'src/containers'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
       '@styles': path.resolve(__dirname, 'src/styles'),
       '@icons': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Icons'),
       '@logos': path.resolve(__dirname, 'src/assets/Platzi_YardSale_Logos'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@context': path.resolve(__dirname, 'src/context'),
     }
   },
   module: {

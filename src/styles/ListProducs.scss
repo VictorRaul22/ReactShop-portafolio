@@ -1,7 +1,8 @@
 .ListProducs {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(auto-fill, 258px);
   gap: 26px;
+  column-gap: 35px;
   place-content: center;
   padding-top: 26px;
 }

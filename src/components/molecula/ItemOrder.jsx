@@ -1,7 +1,7 @@
 import React from 'react'
 import "@styles/ItemOrder.scss"
 import flecha from "@icons/flechita.svg"
-import { Texto } from '../atomo/Texto'
+import { Texto } from "@atomo/Texto.jsx"
 function ItemOrder({details}) {
   return (
     <div className={`ItemOrder ${details?'ItemOrder-details':''}`}>

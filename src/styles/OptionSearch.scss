@@ -1,11 +1,20 @@
 .OptionSearch {
-  width: 50%;
+  width: 100%;
   display: flex;
   column-gap: 20px;
   min-width: 240px;
+  align-items: center;
+}
+.OptionSearch input[type="search"] {
+  min-width: 250px;
+  max-width: 25%;
 }
 @media (max-width: 640px) {
   .OptionSearch {
     flex-direction: column;
+    row-gap: 20px;
+  }
+  .OptionSearch input[type="search"] {
+    max-width: 100%;
   }
 }

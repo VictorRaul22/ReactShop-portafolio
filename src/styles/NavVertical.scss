@@ -7,7 +7,8 @@
   position: absolute;
   right: 0;
   top: 61px;
-  display: none;
+  z-index: 1;
+  background-color: white;
 }
 .desktop-menu ul {
   list-style: none;

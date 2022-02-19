@@ -1,12 +1,21 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import "@styles/Checkout.scss"
-import {Texto} from "../atomo/Texto"
+import {Texto} from "@atomo/Texto"
 import flecha from "@icons/flechita.svg";
-import {Button} from "../atomo/Button"
-import {ItemProductCart} from '../modecula/ItemProductCart';
-import {SummaryCart} from "../modecula/SummaryCart"
-import {ListProductCart} from "../modecula/ListProductCart"
+import {Button} from "@atomo/Button"
+import {ItemProductCart} from '@molecula/ItemProductCart';
+import {SummaryCart} from "@molecula/SummaryCart"
+import {ListProductCart} from "@molecula/ListProductCart"
+import AppContext from "@context/AppContext";
+
 function Checkout(props) {
+  const {state}=useContext(AppContext);
+  const sumTotal=()=>{
+    const reducer=(accumulator,currentValue)=> accumulator+ currentValue.price;
+    const sum=state.cart.reduce(reducer,0);
+    return sum;
+  }
+    // console.log(state);
   return (
     <div className={`Checkout ${props.heightAll?'Checkout-heightAll':''}`}>
       <div className="title-Checkout">
@@ -15,12 +24,15 @@ function Checkout(props) {
       </div>
         <div className="my-order-content">
           <ListProductCart>
-            <ItemProductCart/>
-            <ItemProductCart removed/>
+            {state.cart.map((product)=>(
+              <ItemProductCart product={product} key={`shopping-${product.key}`}/>
+
+            ))}
+            {/* <ItemProductCart removed/> */}
 
           </ListProductCart>
           <div>
-            <SummaryCart/>
+            <SummaryCart price={`${sumTotal()}`}/>
             <Button type="submit">Checkout</Button>
           </div>
         </div>

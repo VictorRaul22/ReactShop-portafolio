@@ -1,18 +1,23 @@
-import React from 'react'
-import {OptionSearch} from "../components/organismo/OptionSearch";
-import {Input} from "../components/atomo/Input"
-import { TypeSearch } from '../components/modecula/TypeSearch';
-import {Texto} from "../components/atomo/Texto"
-import {ListProducs} from "../containers/ListProducs"
-import {Product} from '../components/organismo/Product';
-import {ImgProduct} from "../components/atomo/ImgProduct";
-import {ShopingCard} from "../components/atomo/shopingCard";
+import React,{useState,useEffect} from 'react'
+import {OptionSearch} from "@organismo/OptionSearch";
+import {Input} from "@atomo/Input"
+import { TypeSearch } from '@molecula/TypeSearch';
+import {Texto} from "@atomo/Texto"
+import {ListProducs} from "@containers/ListProducs"
+import {Product} from '@organismo/Product';
+
+import useGetProducts from '@hooks/useGetProducts';
+// import {ImgProduct} from "@atomo/ImgProduct";
+// import {ShopingCard} from "@atomo/ShopingCard";
 // import {Checkout} from "../components/organismo/Checkout"
 // import {AddContainer} from "../components/organismo/AddContainer"
 // import {Aside} from "../containers/Aside";
 
 import "@styles/Home.scss";
+const API="https://api.escuelajs.co/api/v1/products?limit=10&offset=1"
 function Home() {
+  const products=useGetProducts(API)
+  // console.log("render")
   return (
     <div className='Home'>
       <OptionSearch>
@@ -21,25 +26,16 @@ function Home() {
           <Texto bold sm inline>Order </Texto><Texto thin inline>Most recent</Texto>
         </TypeSearch>
       </OptionSearch>
-      <ListProducs>
-        <Product>
-          <ImgProduct 
-          src={"https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} 
-          alt={"bike"}/>
-          <div className="Product-info">
-            <div>
-              <Texto bold >$120,00</Texto>
-              <Texto thin gray sm>Round shelf</Texto>
-            </div>
-            <figure>
-              <ShopingCard type="add"/>
-            </figure>
-          </div>
-        </Product>
+      <ListProducs
+        products={products}
+        render={(product)=>(
+          <Product
+            key={product.key}
+            product={product}
+            />
+        )}
+      >
       </ListProducs>
-      {/* <Aside>
-        <Checkout heightAll/>
-      </Aside> */}
     </div>
     
   )
