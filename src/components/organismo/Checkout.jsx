@@ -9,7 +9,7 @@ import {ListProductCart} from "@molecula/ListProductCart"
 import AppContext from "@context/AppContext";
 
 function Checkout(props) {
-  const {state}=useContext(AppContext);
+  const {state,setToggleOrders}=useContext(AppContext);
   const sumTotal=()=>{
     const reducer=(accumulator,currentValue)=> accumulator+ currentValue.price;
     const sum=state.cart.reduce(reducer,0);
@@ -18,7 +18,7 @@ function Checkout(props) {
     // console.log(state);
   return (
     <div className={`Checkout ${props.heightAll?'Checkout-heightAll':''}`}>
-      <div className="title-Checkout">
+      <div className="title-Checkout" onClick={()=>setToggleOrders((oldToggleOrders)=>!oldToggleOrders)}>
         <img src={flecha} alt="arrow"/>
         <Texto bold lg>Shopping cart</Texto>
       </div>

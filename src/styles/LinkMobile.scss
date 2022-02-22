@@ -1,0 +1,17 @@
+.LinkMobile {
+  margin-bottom: 24px;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+  }
+}
+.LinkMobile-thin a {
+  font-size: var(--sm);
+  font-weight: 300;
+}
+.LinkMobile-green a {
+  font-size: var(--sm);
+  color: var(--hospital-green);
+}

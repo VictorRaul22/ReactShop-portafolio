@@ -6,6 +6,11 @@ function useGetProducts(API) {
   useEffect(async () => {
     const response = await fetch(API)
     const data = await response.json();
+    // const addAttribAddToCart = data.map(product => {
+    //   product.addToCart = false;
+    //   return product;
+    // })
+    console.log(data)
     setProducts(data);
 
   }, [])

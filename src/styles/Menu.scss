@@ -1,7 +1,11 @@
 .menu {
   display: none;
   width: 20px;
+  img {
+    width: 100%;
+  }
 }
+
 @media (max-width: 640px) {
   .menu {
     display: block;

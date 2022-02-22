@@ -1,9 +1,9 @@
 import React from 'react'
-
 import "@styles/Aside.scss"
-function Aside({children}) {
+function Aside({children,toggleOrders}) {
+  
   return (
-    <aside className='Aside'>
+    <aside className={`Aside`}>
       {children}
     </aside>
   )

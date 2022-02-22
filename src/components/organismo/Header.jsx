@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React,{useContext,useState} from "react";
 import "@styles/Header.scss"
 import {Logo}from "@atomo/Logo";
 import {Menu} from "@atomo/Menu"
@@ -12,12 +12,15 @@ import {ItemNotification} from "@molecula/ItemNotification";
 import {Aside} from "@containers/Aside";
 import {Checkout} from "@organismo/Checkout"
 import AppContext from "@context/AppContext"; 
+import cartNotification from "@icons/icon_shopping_cart_notification.svg";
+import { MenuMobile } from "@molecula/MenuMobile";
 function Header() {
-  const {state}=useContext(AppContext);
-  const [toggleOrders,setToggleOrders]=React.useState(false);
+  const {state,toggleOrders, setToggleOrders}=useContext(AppContext);
+  // const [toggleOrders,setToggleOrders]=React.useState(false);
+  const [toggleMenuMobile, setToggleMenuMobile] = useState(false)
   return (
     <nav className="Header">
-      <Menu/>
+      <Menu setToggle={setToggleMenuMobile}/>
       <NavBar>
         <Logo/>
         <Nav left >
@@ -44,16 +47,21 @@ function Header() {
           />
           <li onClick={()=>setToggleOrders(!toggleOrders)}>
             <ItemNotification className="navbar-shopping-cart">
-              <ShopingCard type="notification"/>
+              <ShopingCard src={cartNotification} alt="boton del carro de compras"/>
               {state.cart.length>0?<div>{state.cart.length}</div>:null}
             </ItemNotification>
           </li>
         </Nav>
       </NavBar>
       {toggleOrders &&       
-      <Aside >
-        <Checkout heightAll/>
-      </Aside>}
+        <Aside toggleOrders={toggleOrders}>
+          <Checkout heightAll/>
+        </Aside>
+      }
+      {
+        toggleMenuMobile &&
+        <MenuMobile setToggle={setToggleMenuMobile}/>
+      }
     </nav>
   );
 }

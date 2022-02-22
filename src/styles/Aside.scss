@@ -1,15 +1,32 @@
 .Aside {
   width: 360px;
   padding-bottom: 24px;
-  right: 0;
+  right: 0px;
   height: 100%;
-  position: absolute;
+  //position: absolute;
   position: fixed;
   top: 61px;
+  z-index: 999;
   background-color: white;
+  border-left: 1px solid var(--very-light-pink);
+  animation: swipeLeft 1s ease-in-out forwards;
+  // overflow-y: scroll;
+}
+@keyframes swipeLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 @media (max-width: 640px) {
   .Aside {
     width: 100%;
+    border-left: none;
+    overflow-y: scroll;
   }
+  // #App {
+  //   overflow-y: hidden;
+  // }
 }

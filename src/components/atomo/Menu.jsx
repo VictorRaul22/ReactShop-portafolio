@@ -1,9 +1,11 @@
 import React from 'react'
 import "@styles/Menu.scss"
 import menu from "@icons/icon_menu.svg"
-function Menu() {
+function Menu({setToggle}) {
   return (
-    <img src={menu} alt="menu" className="menu" />
+    <div className="menu" onClick={()=>setToggle((oldToggle)=>!oldToggle)}>
+      <img src={menu} alt="menu"  />
+    </div>
   )
 }
 

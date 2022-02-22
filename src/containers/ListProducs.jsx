@@ -12,11 +12,12 @@ function ListProducs({children,render,products}) {
   return (
     <div className='ListProducs'>
       {products.map((product)=>renderFunc({
-        key:product.id,
+        id:product.id,
         name:product.title,
         price:product.price,
         src:product.images[0],
-        alt:product.title
+        alt:product.title,
+        // CartAdded:product.addToCart,
       }))}
     </div>
   )

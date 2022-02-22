@@ -14,7 +14,7 @@ import useGetProducts from '@hooks/useGetProducts';
 // import {Aside} from "../containers/Aside";
 
 import "@styles/Home.scss";
-const API="https://api.escuelajs.co/api/v1/products?limit=10&offset=1"
+const API="https://api.escuelajs.co/api/v1/products?limit=20&offset=1"
 function Home() {
   const products=useGetProducts(API)
   // console.log("render")
@@ -30,7 +30,7 @@ function Home() {
         products={products}
         render={(product)=>(
           <Product
-            key={product.key}
+            key={product.id}
             product={product}
             />
         )}
