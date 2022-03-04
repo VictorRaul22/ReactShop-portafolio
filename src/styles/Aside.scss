@@ -6,7 +6,7 @@
   //position: absolute;
   position: fixed;
   top: 61px;
-  z-index: 999;
+  z-index: 4;
   background-color: white;
   border-left: 1px solid var(--very-light-pink);
   animation: swipeLeft 1s ease-in-out forwards;
@@ -26,6 +26,7 @@
     border-left: none;
     overflow-y: scroll;
   }
+
   // #App {
   //   overflow-y: hidden;
   // }
